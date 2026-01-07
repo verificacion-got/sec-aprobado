@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificado SEC - Detalle</title>
+    <style>
+        /* RESET Y FUENTES */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* HEADER SUPERIOR AZUL */
+        .navbar {
+            background-color: #003057; /* Azul oscuro corporativo */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+            border-bottom: 4px solid #fbb900; /* Línea amarilla */
+        }
+
+        .navbar-logo {
+            color: white;
+            font-weight: 800;
+            font-size: 28px;
+            letter-spacing: -1px;
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        .container {
+            width: 100%;
+            max-width: 500px; /* Ancho máximo tipo móvil */
+            margin: 0 auto;
+            padding: 20px 20px 40px 20px;
+            flex: 1;
+        }
+
+        /* TARJETA DE CONTENIDO */
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .logos-gob {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* Simulación de logos (reemplazar src con imágenes reales) */
+        .logo-min {
+            height: 40px;
+            width: auto;
+        }
+
+        .status-badge {
+            background-color: #337ab7; /* Azul botón activo */
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        /* TEXTOS Y TÍTULOS */
+        h1 {
+            color: #455a64;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .clase-title {
+            font-size: 26px;
+            color: #337ab7;
+            margin-bottom: 30px;
+        }
+        
+        .clase-title span {
+            font-weight: bold;
+        }
+
+        /* CAMPOS DE INFORMACIÓN */
+        .info-group {
+            margin-bottom: 25px;
+        }
+
+        .label {
+            display: block;
+            color: #78909c; /* Gris azulado suave */
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .value {
+            display: block;
+            color: #37474f; /* Gris oscuro azulado */
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .value-large {
+            font-size: 22px;
+            color: #263238;
+        }
+
+        /* FECHAS (FORMATO ESPECÍFICO) */
+        .date-value {
+            color: #455a64;
+            font-size: 22px;
+            font-weight: 700;
+            margin-top: 5px;
+        }
+
+        .issued-text {
+            color: #607d8b;
+            font-size: 16px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .valid-text {
+            font-size: 16px;
+            color: #607d8b;
+        }
+        
+        .valid-text strong {
+            color: #37474f;
+            font-size: 18px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #003057;
+            color: white;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        .footer-logo {
+            font-size: 30px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            display: block;
+            letter-spacing: -2px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        .icon {
+            margin-right: 10px;
+            font-size: 18px;
+            width: 25px;
+            text-align: center;
+            border: 1px solid white;
+            border-radius: 50%;
+            height: 25px;
+            line-height: 23px;
+            display: inline-block;
+        }
+        
+        .icon-mouse {
+             border: none;
+             font-size: 20px;
+        }
+
+        /* Ajustes visuales finos para igualar la imagen */
+        .institution-title {
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #37474f;
+            font-size: 20px;
+            line-height: 1.3;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-logo">SEC</div>
+    </nav>
+
+    <div class="container">
+        <div class="card-header">
+            <div class="logos-gob">
+                <img src="https://via.placeholder.com/120x50/ffffff/333333?text=Ministerio+SEC" alt="Logo Ministerio" class="logo-min">
+            </div>
+            <div class="status-badge">
+                ACTIVO
+            </div>
+        </div>
+
+        <h1>Certificado de<br>INSTALADOR GAS</h1>
+
+        <div class="clase-title">
+            Clase <span>3</span>
+        </div>
+
+        <div class="info-group">
+            <span class="label">Rut</span>
+            <span class="value">15.020.606-5</span>
+        </div>
+
+        <div class="info-group">
+            <span class="label">Nombre</span>
+            <span class="value-large">Odel David Soto Shee</span>
+        </div>
+
+        <div class="info-group">
+            <span class="label">Carrera / Certificación /<br>Especialidad</span>
+            <span class="value-large">Técnico en<br>Construccion</span>
+        </div>
+
+        <div class="info-group" style="margin-top: 40px;">
+            <span class="label">Institución</span>
+            <div class="institution-title">
+                INSTITUTO<br>PROFESIONAL AIEP
+            </div>
+        </div>
+
+        <div class="info-group">
+            <span class="label">Fecha de inicio licencia en la clase</span>
+            <div class="date-value">11/07/2019</div>
+        </div>
+
+        <div class="info-group">
+            <span class="label">Fecha última actualización</span>
+            <div class="date-value">31/08/2020</div>
+        </div>
+
+        <div class="issued-text">
+            Emitido el 07 de Enero de 2026
+        </div>
+
+        <div class="valid-text">
+            Válido hasta el <strong>07/04/2026</strong>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-logo">SEC</div>
+        
+        <div class="contact-item">
+            <span class="icon">📞</span>
+            <span>600 6000 732</span>
+        </div>
+
+        <div class="contact-item">
+            <span class="icon icon-mouse">🖱️</span>
+            <span>www.sec.cl</span>
+        </div>
+
+        <div class="contact-item">
+            <span class="icon icon-mouse">🐦</span>
+            <span>@SEC_cl</span>
+        </div>
+    </footer>
+
+</body>
+</html>
